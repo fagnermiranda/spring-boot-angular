@@ -6,17 +6,17 @@ import org.springframework.data.domain.Page;
 
 public interface IOperations<T, I> {
 
-    T findById(final I id);
+	T findById(final I id);
 
-    List<T> findAll();
+	List<T> findAll();
 
-    Page<T> findPaginated(int page, int size);
+	Page<T> findPaginated(int page, int size);
 
-    T create(final T entity);
+	T create(final T entity);
 
-    T update(final T entity);
+	T update(final T entity);
 
-    void delete(final T entity);
+	void delete(final T entity);
 
 	void deleteById(I id);
 
