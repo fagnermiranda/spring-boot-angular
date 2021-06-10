@@ -9,7 +9,7 @@ import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.transaction.annotation.Transactional;
 
 @Transactional
-public abstract class AbstractService<T, I> implements IOperations<T, I> {
+public abstract class CrudService<T, I> implements ICrudService<T, I> {
 
 	@Autowired
 	protected JpaRepository<T, I> repository;

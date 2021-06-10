@@ -4,7 +4,7 @@ import java.util.List;
 
 import org.springframework.data.domain.Page;
 
-public interface IOperations<T, I> {
+public interface ICrudService<T, I> {
 
 	T findById(final I id);
 
